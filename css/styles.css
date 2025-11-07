@@ -1,5 +1,7 @@
 :root {
   --bg-color: #faf4ea;
+  --main-txt-color: #31261a;
+  --main-accent-color: #819b57;
 }
 
 body {
@@ -64,7 +66,11 @@ a {
   border-color: #819b57;
   border: 2px;
 }
-
+.section-hero {
+  padding: 272px 0;
+  background-image: url(../images/hero-bg.jpg),
+    radial-gradient(#121211c7, #12121199, #12121100);
+}
 .hero-title {
   font-family: Poppins;
   font-weight: 900;
@@ -72,7 +78,6 @@ a {
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
-
   color: #faf4ea;
 }
 .hero-title .accent {
@@ -90,6 +95,9 @@ a {
   text-align: center;
 }
 
+.section {
+  padding: 48px 0;
+}
 .advantages-list {
   display: flex;
   gap: 160px;
