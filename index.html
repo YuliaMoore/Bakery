@@ -4,58 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/"
-          ><img src="./images/logo.svg" alt="Логотип сучасної пекарні"
-        /></a>
-        <ul>
-          <li class="navigation-link">
-            <a href="#traditions-section">Наші традиції</a>
-          </li>
-          <li class="navigation-link">
-            <a href="#chefs-section">Шеф-кухарі</a>
-          </li>
-          <li class="navigation-link">
-            <a href="#formats-section">Формати</a>
-          </li>
-          <li class="navigation-link">
-            <a href="#contacts-section">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="button" type="submit">Замовити дзвінок</button>
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <nav class="header-navigation">
+            <a href="/"
+              ><img src="./images/logo.svg" alt="Логотип сучасної пекарні"
+            /></a>
+            <ul class="header-menu">
+              <li class="navigation-link">
+                <a href="#traditions-section">Наші традиції</a>
+              </li>
+              <li class="navigation-link">
+                <a href="#chefs-section">Шеф-кухарі</a>
+              </li>
+              <li class="navigation-link">
+                <a href="#formats-section">Формати</a>
+              </li>
+              <li class="navigation-link">
+                <a href="#contacts-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button" type="submit">Замовити дзвінок</button>
+        </div>
+      </div>
     </header>
     <main>
       <section class="section-hero">
-        <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
+<div class="container">        <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
       </section>
-      <section id="section traditions-section">
+      <section class="container advantages-section">
+        <h2 class="hidden">Наші переваги</h2>
         <ul class="advantages-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
-        </ul>
-        <h2 class="section section-title">Новий формат традицій</h2>
-        <p>
-          <span> shop bakery</span> — це пекарня, яка взяла все найкраще, і
-          зберегла смак традиційної випічки та натуральність інгредієнтів.
-        </p>
-        <p>
-          Ми працюємо як найвідоміші мережі—
-          <span>5 хвилин і замовлення готове</span>. А ще у наших пекарень
-          стильний дизайн та висока якість обслуговування!
-        </p>
-        <img
-          src="./images/baker-man.jpg"
-          alt="Чоловік пекар дивиться на хліб з посмішкою"
-        />
+        </ul></div>
+      </section>
+      <section id="section traditions-section">
+        <div class="container">
+          <div class="traditions-left">
+            <h2 class="traditions-title section-title">
+              Новий формат традицій
+            </h2>
+            <p class="traditions-text">
+              <span class="traditions-accent accent-upper"> shop bakery</span> —
+              це пекарня, яка взяла все найкраще, і зберегла смак традиційної
+              випічки та натуральність інгредієнтів.
+            </p>
+            <p>
+              Ми працюємо як найвідоміші мережі—
+              <span>5 хвилин і замовлення готове</span>. А ще у наших пекарень
+              стильний дизайн та висока якість обслуговування!
+            </p>
+          </div>
+          <img
+            class="baker-man"
+            src="./images/baker-man.jpg"
+            alt="Чоловік пекар дивиться на хліб з посмішкою"
+          />
+        </div>
       </section>
       <section id="chefs-section">
-        <h2 class="section-title">Наші найкращі шеф -кухарі</h2>
+       <div class="container"> <h2 class="section-title">Наші найкращі шеф -кухарі</h2>
         <ul>
           <li>
             <article>
@@ -76,10 +97,10 @@
               <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
             </article>
           </li>
-        </ul>
+        </ul></div>
       </section>
       <section id="formats-section">
-        <h2 class="section-title">Формати</h2>
+        <div class="container"><h2 class="section-title">Формати</h2>
         <ul>
           <li>
             <article>
@@ -117,7 +138,7 @@
               </ul>
             </article>
           </li>
-        </ul>
+        </ul></div>
       </section>
       <section id="contacts-section ">
         <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
