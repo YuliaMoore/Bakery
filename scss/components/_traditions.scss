@@ -1,0 +1,40 @@
+.traditions-section {
+  padding-top: 96px;
+}
+
+.taditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-left {
+  width: 710px;
+}
+.traditions-title {
+  margin-bottom: 42px;
+}
+
+.traditions-text {
+  margin-top: 42px;
+  font-weight: 400;
+  font-style: 18px;
+  line-height: 1;
+  margin-bottom: 42px;
+}
+
+.traditions-accent {
+  font-weight: 400;
+  font-style: 18px;
+  line-height: 1;
+  color: var(--color-brand-norma);
+}
+
+.accent-upper {
+  text-transform: uppercase;
+}
+.baker-man {
+  display: block;
+  width: 393px;
+  height: 466px;
+}

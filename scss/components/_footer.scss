@@ -1,0 +1,28 @@
+.footer {
+  background-image: url(../../images/footer-bg.png);
+  background-color: var(--color-primary-dark);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.footer::before,
+.footer::after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  bottom: 0;
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  background-image: url(../images/footer-left.png);
+}
+
+.footer::after {
+  width: 380px;
+  height: 190px;
+  background-image: url(../images/footer-right.png);
+  right: 0;
+}

@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <header class="header">
@@ -21,21 +21,23 @@
               ><img src="./images/logo.svg" alt="Логотип сучасної пекарні"
             /></a>
             <ul class="header-menu">
-              <li class="navigation-link">
+              <li class="link">
                 <a href="#traditions-section">Наші традиції</a>
               </li>
-              <li class="navigation-link">
+              <li class="link">
                 <a href="#chefs-section">Шеф-кухарі</a>
               </li>
-              <li class="navigation-link">
+              <li class="link">
                 <a href="#formats-section">Формати</a>
               </li>
-              <li class="navigation-link">
+              <li class="link">
                 <a href="#contacts-section">Контакти</a>
               </li>
             </ul>
           </nav>
-          <button class="button" type="submit">Замовити дзвінок</button>
+          <button type="submit" class="modal-btn-open button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -51,9 +53,9 @@
         <div class="container">
           <h2 class="hidden">Наші переваги</h2>
           <ul class="advantages-list">
-            <li>Великий попит на ринку</li>
-            <li>Доступні за бюджетом формати</li>
-            <li>Досвідчена управлінська команда</li>
+            <li class=".advantages-item">Великий попит на ринку</li>
+            <li class=".advantages-item">Доступні за бюджетом формати</li>
+            <li class=".advantages-item">Досвідчена управлінська команда</li>
           </ul>
         </div>
       </section>
@@ -121,14 +123,14 @@
         </div>
       </section>
       <section id="formats-section">
-        <div class="container">
-          <h2 class="section-title">Формати</h2>
-          <ul>
-            <li>
+        <div class="formats-container container">
+          <h2 class="formats-title">Формати</h2>
+          <ul class="formats-list">
+            <li class="formats-item">
               <article class="format-card">
-                <h3 lang="en">Walrus</h3>
+                <h3 lang="en" class="format-title">Walrus</h3>
                 <ul>
-                  <li>Площа: до 120 м2</li>
+                  <li class="format-text">Площа: до 120 м2</li>
                   <li>Меню: розширене меню</li>
                   <li>
                     Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
@@ -138,9 +140,9 @@
                 </ul>
               </article>
             </li>
-            <li>
+            <li class="formats-item">
               <article class="format-card">
-                <h3 lang="en">Horseshoe</h3>
+                <h3 lang="en" class="format-title">Horseshoe</h3>
                 <ul>
                   <li>Площа: до 25 м2</li>
                   <li>Меню: найпопулярніші позиції меню</li>
@@ -149,9 +151,9 @@
                 </ul>
               </article>
             </li>
-            <li>
+            <li class="formats-item">
               <article class="format-card">
-                <h3 lang="en">Handlebar</h3>
+                <h3 lang="en" class="format-title">Handlebar</h3>
                 <ul>
                   <li>Площа: до 15 м2</li>
                   <li>Меню: найпопулярніші позиції меню</li>
@@ -163,7 +165,7 @@
           </ul>
         </div>
       </section>
-      <section id="contacts-section ">
+      <section id="contacts-section section">
         <div class="container">
           <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
           <p>Заповни форму, щоб ми звʼязались з тобою!</p>
@@ -178,7 +180,7 @@
             <label for="user-email">Електронна пошта</label>
             <input type="email" name="user-email" id="user-email" />
 
-            <button type="submit modal-btn-open">Замовити дзвінок</button>
+            <button type="submit">Замовити дзвінок</button>
           </form>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.16344704247!2d30.48869301159421!3d50.45668098679737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2sro!4v1762011212772!5m2!1suk!2sro"
@@ -229,7 +231,7 @@
       </address>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal"><button class="modal-btn-close">X</button></div>
     </div>
 
