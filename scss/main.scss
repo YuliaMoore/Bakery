@@ -1,17 +1,18 @@
-@import "./utils/utils";
-@import "./utils/variables";
+@use "./utils/utils";
+@use "./utils/variables";
 
-@import "./base";
+@use "./base";
 
-@import "./components/buttons";
-@import "./components/links";
-@import "./components/header";
-@import "./components/hero";
-@import "./components/advantages";
-@import "./components/chefs-section";
-@import "./components/formats-section";
-@import "./components/footer";
-@import "./components/modal";
+@use "./components/buttons";
+@use "./components/links";
+@use "./components/header";
+@use "./components/hero";
+@use "./components/advantages";
+@use "./components/traditions";
+@use "./components/chefs-section";
+@use "./components/formats-section";
+@use "./components/footer";
+@use "./components/modal";
 
 .section {
   padding: 48px 0;
@@ -23,23 +24,12 @@
   padding: 0 24px;
 }
 
-/*Section Advantages */
-
 .section-title {
-  color: var(--main-txt-color);
+  color: var(--color-primary-dark);
   font-weight: 900;
   font-size: 64px;
   line-height: 84px;
   letter-spacing: 0%;
   text-align: center;
-}
-
-.section {
-  padding: 48px 0;
-}
-
-.section-title {
-  font-style: 64px;
-  font-weight: 900;
   line-height: 1.3;
 }
