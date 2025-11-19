@@ -1,7 +1,7 @@
 .chefs-title {
   position: relative;
   text-align: center;
-  margin-bottom: 0 auto 80px;
+  margin-bottom: 80px;
 }
 
 .chefs-title::before {
@@ -20,6 +20,14 @@
   border: 2px solid var(--accent-color-light);
   content: " ";
 }
+
+.chefs-list {
+  display: flex;
+}
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
 .chef-accent {
   color: var(--tittle-accent);
 }
@@ -36,4 +44,8 @@
   line-height: 100%;
   letter-spacing: 0%;
   vertical-align: middle;
+}
+
+.chef-info {
+  max-width: 334px;
 }

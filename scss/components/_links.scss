@@ -3,6 +3,7 @@
   transition: color 0.3s;
 }
 
-.link:hover {
+.link:hover,
+.link:active {
   color: var(--color-brand-normal);
 }

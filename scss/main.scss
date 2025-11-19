@@ -1,8 +1,9 @@
+@use "./utils/fonts";
 @use "./utils/utils";
 @use "./utils/variables";
 
 @use "./base";
-
+@use "./components/section";
 @use "./components/buttons";
 @use "./components/links";
 @use "./components/header";
@@ -11,25 +12,6 @@
 @use "./components/traditions";
 @use "./components/chefs-section";
 @use "./components/formats-section";
+@use "./components/contacts-section";
 @use "./components/footer";
 @use "./components/modal";
-
-.section {
-  padding: 48px 0;
-}
-.container {
-  width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.section-title {
-  color: var(--color-primary-dark);
-  font-weight: 900;
-  font-size: 64px;
-  line-height: 84px;
-  letter-spacing: 0%;
-  text-align: center;
-  line-height: 1.3;
-}

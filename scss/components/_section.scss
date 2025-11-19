@@ -1,0 +1,19 @@
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-title {
+  color: var(--color-primary-dark);
+  margin: auto;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 84px;
+  letter-spacing: 0%;
+  line-height: 1.3;
+}
