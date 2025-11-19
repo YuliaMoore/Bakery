@@ -4,6 +4,7 @@
 }
 
 .formats-list {
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -40,9 +41,11 @@
 }
 // .format-card-text {
 // }
-.formats-title {
-  margin-bottom: 80px;
-}
+// .formats-title {
+//   // margin-left: auto;
+//   // margin-right: auto;
+//   // margin-bottom: 80px;
+// }
 
 .format-title {
   font-style: 24px;
