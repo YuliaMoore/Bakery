@@ -107,7 +107,7 @@ a {
   margin: 0 auto;
   font-weight: 900;
   font-size: 64px;
-  line-height: 84px;
+  line-height: 1.31;
   letter-spacing: 0%;
   line-height: 1.3;
 }
@@ -181,7 +181,15 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 1200px) {
+  .header-menu {
+    display: none;
+  }
+}
 
+.hearder__burger {
+  display: none;
+}
 .section-hero {
   padding: 272px 0;
   background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url(../images/hero-bg.jpg);
@@ -250,15 +258,16 @@ a {
   margin-top: 42px;
   font-weight: 400;
   font-style: 18px;
-  line-height: 1;
+  line-height: 100%;
   margin-bottom: 42px;
+  max-width: 711px;
 }
 
 .traditions-accent {
   font-weight: 400;
-  font-style: 18px;
+  font-size: 18px;
   line-height: 1;
-  color: var(--color-brand-norma);
+  color: var(--color-brand-normal);
 }
 
 .accent-upper {
@@ -517,6 +526,10 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 166px;
 }
 
 .footer::before,
@@ -538,6 +551,37 @@ a {
   height: 190px;
   background-image: url(../images/footer-right.png);
   right: 0;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 166px;
+}
+
+.footer-nav {
+  width: 211px;
+  gap: 164px;
+}
+
+.footer-adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-nav-links {
+  font-size: 18px;
+  color: var(--color-primary-light);
+}
+
+.footer-text {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--color-secondary-dark);
 }
 
 /* Modal */

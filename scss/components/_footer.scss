@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  display: flex;
+  gap: 166px;
 }
 .footer::before,
 .footer::after {
@@ -25,4 +27,31 @@
   height: 190px;
   background-image: url(../images/footer-right.png);
   right: 0;
+}
+
+.footer-wrap {
+  display: flex;
+  gap: 166px;
+}
+
+.footer-nav {
+  width: 211px;
+  gap: 164px;
+}
+
+.footer-adress {
+  display: flex;
+}
+
+.footer-nav-links {
+  font-size: 18px;
+  color: var(--color-primary-light);
+}
+
+.footer-text {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--color-secondary-dark);
 }

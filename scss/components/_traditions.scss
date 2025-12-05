@@ -20,15 +20,16 @@
   margin-top: 42px;
   font-weight: 400;
   font-style: 18px;
-  line-height: 1;
+  line-height: 100%;
   margin-bottom: 42px;
+  max-width: 711px;
 }
 
 .traditions-accent {
   font-weight: 400;
-  font-style: 18px;
+  font-size: 18px;
   line-height: 1;
-  color: var(--color-brand-norma);
+  color: var(--color-brand-normal);
 }
 
 .accent-upper {

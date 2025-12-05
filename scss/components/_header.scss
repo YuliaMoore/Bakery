@@ -24,4 +24,23 @@
   gap: 64px;
   flex-grow: 1;
   justify-content: center;
+
+  @media screen and (max-width: $bp-desctop) {
+    display: none;
+  }
+}
+
+.header__button {
+  display: none;
+  @media screen and (max-width: $bp-desctop) {
+    display: block;
+  }
+}
+
+.hearder__burger {
+  display: none;
+  @media screen and (min-width: $bp-desctop) {
+    display: block;
+    color: var(--color-primary-light);
+  }
 }

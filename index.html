@@ -29,8 +29,13 @@
               </li>
             </ul>
           </nav>
-          <button type="submit" class="modal-btn-open button">
+          <button type="submit" class="header__button modal-btn-open button">
             Замовити дзвінок
+          </button>
+          <button class="hero__burger">
+            <svg width="24" height="24">
+              <use href="./images/sprite.svg#menu"></use>
+            </svg>
           </button>
         </div>
       </div>
@@ -65,10 +70,11 @@
               випічки та натуральність інгредієнтів.
             </p>
             <p class="traditions-text">
-              Ми працюємо як найвідоміші мережі—
+              Ми працюємо як найвідоміші мережі— <br />
               <span class="traditions-accent">5 хвилин і замовлення готове</span
-              >. А ще у наших пекарень стильний дизайн та висока якість
-              обслуговування!
+              >. <br />
+              А ще у наших пекарень стильний дизайн <br />
+              та висока якість обслуговування!
             </p>
           </div>
           <img
@@ -236,42 +242,53 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <a href="#">
-        <!--logo-->
-      </a>
-      <nav>
-        <!-- navigation-->
-        <ul>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li>
-            <a href="tel:+ 380960000007">+ 38 (096) 000 00 07</a>
-          </li>
-          <li>
-            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
-          </li>
-          <li>
-            <a href="https://share.google/whsqoF0Dnm7xIb4se" target="_blank"
-              >Україна, м. Київ, вул. Січових Стрільців 54</a
-            >
-          </li>
-          <li>
-            <a href="#"><!--facebook icon--></a>
-          </li>
-          <li>
-            <a href="#"><!--insta icon--></a>
-          </li>
-        </ul>
-        <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>&copy; 2022 Дані захищені</p>
-      </address>
+    <footer class="section footer">
+      <div class="container footer-wrap">
+        <a href="/"
+          ><img src="./images/logo.svg" alt="Логотип сучасної пекарні"
+        /></a>
+        <nav>
+          <!-- navigation-->
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-nav-links">Наші традиції</a></li>
+            <li><a href="#" class="footer-nav-links">Шеф-кухарі</a></li>
+            <li><a href="#" class="footer-nav-links">Формати</a></li>
+            <li><a href="#" class="footer-nav-links">Контакти</a></li>
+          </ul>
+        </nav>
+        <address class="footer-adress">
+          <ul>
+            <li>
+              <a href="tel:+ 380960000007" class="footer-nav-links"
+                >+ 38 (096) 000 00 07</a
+              >
+            </li>
+            <li>
+              <a href="mailto:shopbakery@gmail.com" class="footer-nav-links"
+                >shopbakery@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://share.google/whsqoF0Dnm7xIb4se"
+                target="_blank"
+                class="footer-nav-links"
+                >Україна, м. Київ, вул. Січових Стрільців 54</a
+              >
+            </li>
+            <li>
+              <a href="#"><!--facebook icon--></a>
+            </li>
+            <li>
+              <a href="#"><!--insta icon--></a>
+            </li>
+          </ul>
+          <div>
+            <a href="#" target="_blank">Політика конфіденційності</a>
+            <p class="footer-text">&copy; 2022 Дані захищені</p>
+          </div>
+        </address>
+      </div>
     </footer>
 
     <div class="backdrop is-hidden">
@@ -289,6 +306,8 @@
               type="text"
               name="user-name"
               id="user-name"
+              placeholder="Ім'я"
+              required
             />
 
             <label class="form-label hidden" for="user-tel">Телефон</label>
@@ -297,6 +316,8 @@
               type="tel"
               name="user-tel"
               id="user-tel"
+              placeholder="Телефон"
+              pattern="\^[0-9 {12}"
             />
 
             <label class="form-label hidden" for="user-email"
